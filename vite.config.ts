@@ -5,10 +5,10 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/CookinUp/',
   plugins: [
     vue(),
   ],
-  base: '/CookinUp/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
